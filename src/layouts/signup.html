@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+
+<body>
+    <div class="container" id="signup-container">
+        <h1>Sign Up</h1>
+        <form id="signup-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="btn signup" id="btn-signup">Sign Up</button>
+        </form>
+        <div class="button-container">
+            <button class="btn login" id="btn-login">Login</button>
+        </div>
+    </div>
+
+    <!-- Progress bar centered -->
+    <div id="progress-overlay" class="progress-overlay" style="display: none;">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <!-- Success message overlay -->
+    <div id="success-overlay" class="success-overlay" style="display: none;">
+        <div class="success-message">
+            <h2>Success!</h2>
+            <p>Your account has been successfully created.</p>
+            <button class="btn" id="success-ok-btn">OK</button>
+        </div>
+    </div>
+
+    <script type="module" src="../main/signup.ts"></script>
+</body>
+
+
+</html>
