@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #61dafb;
+    /* Primary theme color */
+    --secondary-color: #282c34;
+    /* Secondary theme color */
+    --button-hover-color: #21a1f1;
+    /* Button hover color */
+    --navbar-color: #1c1e22;
+    /* Darker shade for navbar */
+}
+
+/* Example usage */
+body {
+    background-color: var(--secondary-color);
+}

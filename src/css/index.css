@@ -1,0 +1,84 @@
+/* General styles for body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--navbar-color);
+    /* Use the darker navbar color */
+    color: white;
+}
+
+/* Left side styles */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon {
+    width: 40px;
+    /* Adjust the size as needed */
+    height: auto;
+}
+
+/* Right side styles */
+.navbar-right {
+    display: flex;
+    gap: 15px;
+    /* Increase space between buttons and user profile */
+    /* Space between buttons */
+}
+
+.navbar-button {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 5px 10px;
+    /* Reduced padding for the button */
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--secondary-color);
+    /* Use secondary color for button text */
+    transition: background-color 0.3s;
+}
+
+.navbar-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.user-image {
+    width: 40px;
+    /* Set width as needed */
+    height: 40px;
+    /* Set height as needed */
+    border-radius: 50%;
+    /* Makes the image circular */
+    object-fit: cover;
+    /* Ensures the image covers the container */
+}
+
+.hidden {
+    display: none;
+    /* Hides elements and removes them from the layout */
+}
+#user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    /* Add space between image and username */
+}
+
+/* Profile image styles */
+.user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
